@@ -63,60 +63,53 @@
   .inputfrom {
     position: relative; 
   }
-.battery-icon {    
-  display: flex;    
-  align-items: center;    
-  gap: 3px;    
-}    
-  
-.battery-body {    
-  width: 26px;    
-  height: 11px;    
-  border: 1px solid #008000;    
-  border-radius: 3px;    
-  position: relative;    
-  background-color: #fff;    
-  display: flex;    
-  align-items: center;    
-  justify-content: center;    
-  font-size: 8.5px;    
-  font-weight: bold;    
-  color: black;    
-}    
-  
-.battery-fill {    
-  position: absolute;    
-  left: 0;    
-  top: 0;    
-  height: 100%;    
-  width: 75%;    
-  background-color: #008000;    
-  z-index: 0;    
-  border-radius: 2px 0 0 2px;    
-}    
-  .share-btn {
-  padding: 7px 12px;
-  font-size: 15px;
-  min-width: 100px;
+.battery {
+  display: flex;
+  align-items: center;
+  gap: 2px;
 }
-.hridoy-btn {
-  padding: 7px 12px;
-  font-size: 15px;
-  min-width: 100px;
+
+.battery-body {
+  width: 30px;
+  height: 13px;
+  border: 1.2px solid white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: transparent;
+  overflow: hidden;
+  position: relative;
 }
-.battery-text {    
-  position: relative;    
+
+.battery-level {
+  height: 100%;
+  width: 86%;
+  background-color: #14B333;
+  /* Warning yellow */
+  border-radius: 1px 0 0 1px;
   z-index: 1;
-  top:0px;
-  user-select: none;    
-}    
-  
-.battery-cap {    
-  width: 3px;    
-  height: 5px;    
-  background-color: #fff;    
-  border-radius: 1px;    
-}    
+}
+
+.battery-text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+  font-weight: bold;
+  color: white;
+  top: -0.5px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.battery-cap {
+  width: 2px;
+  height: 6px;
+  background-color: white;
+  margin-left: -2px;
+  border-radius: 0 1px 1px 0;
+}
   
 .screen {    
   max-width: 400px;    
@@ -407,13 +400,27 @@
         <span class="bar bar3"></span>    
         <span class="bar bar4"></span>    
       </div>    
-      <div class="wifi">ᯤ</div>    
-      <div class="battery-icon">    
-        <div class="battery-body">    
-          <div class="battery-fill"></div>    
-          <div class="battery-text">70%</div>    
-        </div>    
-        <div class="battery-cap"></div>    
+      
+      <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="24" cy="36" r="2.5" fill="#ffff" />
+  <path d="M17 29C20 26 28 26 31 29" stroke="#ffff" stroke-width="3.5" stroke-linecap="round" />
+  <path d="M13 25C17 21 31 21 35 25" stroke="#ffff" stroke-width="3.5" stroke-linecap="round" />
+  <path d="M8 20C13 15 35 15 40 20" stroke="#ffff" stroke-width="3.5" stroke-linecap="round" />
+</svg>
+<circle cx="24" cy="36" r="2" fill="#ffff" />
+<path d="M17 29C20 26 28 26 31 29" stroke="#ffff" stroke-width="2" stroke-linecap="round" />
+<path d="M13 25C17 21 31 21 35 25" stroke="#ffff" stroke-width="2" stroke-linecap="round" />
+<path d="M8 20C13 15 35 15 40 20" stroke="#ffff" stroke-width="2" stroke-linecap="round" />
+</svg>   
+ <div class="battery-icon">  
+  <div class="battery">
+  <div class="battery-body">
+    <div class="battery-level"></div>
+    <div class="battery-text">86%</div>
+  </div>
+  <div class="battery-cap"></div>
+</div>
+
       </div>    
     </div>    
   </div>    <div class="screen">    
@@ -631,4 +638,4 @@ window.addEventListener('load', function () {
 });
 </script>   
 </body>    
-                               </html>
+  </html>
