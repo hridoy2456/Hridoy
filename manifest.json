@@ -1,18 +1,18 @@
 {
   "name": "Bkash Send Money",
-  "short_name": "Bkash",
+  "short_name": "𝙗𝙆𝙖𝙨𝙝",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#e60073",
   "icons": [
     {
-      "src": "https://i.postimg.cc/rpjsFzV6/1751012495891.jpg",
-      "sizes": "192x192",
+      "src": "https://i.postimg.cc/WzSZ5MLs/1748783430004.jpg",
+      "sizes": "200x200",
       "type": "image/png"
     },
     {
-      "src": "https://i.postimg.cc/rpjsFzV6/1751012495891.jpg",
+      "src": "https://i.postimg.cc/WzSZ5MLs/1748783430004.jpg",
       "sizes": "512x512",
       "type": "image/png"
     }
