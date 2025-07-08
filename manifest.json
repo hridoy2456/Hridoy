@@ -1,18 +1,19 @@
 {
-  "name": "Bkash Send Money",
+  "name": "HRIDOY AHMED",
   "short_name": "𝙗𝙆𝙖𝙨𝙝",
-  "start_url": "/",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#e60073",
+  "theme_color": "#f44336",
+  "orientation": "portrait",
   "icons": [
     {
-      "src": "https://i.postimg.cc/WzSZ5MLs/1748783430004.jpg",
+      "src": "https://i.postimg.cc/rpjsFzV6/1751012495891.jpg",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "https://i.postimg.cc/WzSZ5MLs/1748783430004.jpg",
+      "src": "https://i.postimg.cc/rpjsFzV6/1751012495891.jpg",
       "sizes": "512x512",
       "type": "image/png"
     }
