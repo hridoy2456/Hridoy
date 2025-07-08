@@ -1,0 +1,20 @@
+{
+  "name": "Bkash Send Money",
+  "short_name": "Bkash",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#e60073",
+  "icons": [
+    {
+      "src": "https://i.postimg.cc/rpjsFzV6/1751012495891.jpg",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://i.postimg.cc/rpjsFzV6/1751012495891.jpg",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
